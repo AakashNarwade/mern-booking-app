@@ -71,6 +71,7 @@
 
 .headerIcon {
   color: lightgray;
+  cursor: pointer;
 }
 
 .headerSearchInput {
@@ -92,4 +93,9 @@
 .headerSearchText {
   color: lightgray;
   cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 40px;
 }
