@@ -14,12 +14,14 @@ function App() {
       errorElement: <h2>Error element</h2>,
     },
     {
-      path: "hotel",
-      element: <Hotel />,
-    },
-    {
-      path: "list",
+      path: "hotels",
       element: <List />,
+      children: [
+        {
+          path: ":id",
+          element: <h1>hello from the outside</h1>,
+        },
+      ],
     },
   ]);
   return <RouterProvider router={appRouter} />;
