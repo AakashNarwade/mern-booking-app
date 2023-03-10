@@ -19,6 +19,7 @@
     position: sticky;
     padding: 10px;
     top: 10px;
+    height: max-content;
 }
 
 .lsTitle{
@@ -95,6 +96,5 @@ margin-bottom: 20px;
 
 .listResult{
     flex: 3;
-    border: 2px solid black;
 }
 
