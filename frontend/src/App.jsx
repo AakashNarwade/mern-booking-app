@@ -22,25 +22,7 @@ function App() {
   );
 
   const appRouter = createBrowserRouter(routeDefinition);
-  // const appRouter = createBrowserRouter([
-  //   {
-  //     path: "/",
-  //     element: <Home />,
-  //     errorElement: <h2>Error element</h2>,
-  //   },
-  //   {
-  //     path: "hotels",
-  //     element: <h2>hhhhhhhhh</h2>,
 
-  //     // element: <List />,
-  //     children: [
-  //       {
-  //         path: ":id",
-  //         element: <h2>idididididi</h2>,
-  //       },
-  //     ],
-  //   },
-  // ]);
   return <RouterProvider router={appRouter} />;
 }
 
