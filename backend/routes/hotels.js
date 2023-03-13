@@ -1,9 +1,9 @@
 import express from "express";
 import {
-  allHotels,
   createHotel,
   deleteHotel,
-  singleHotel,
+  getAllHotels,
+  getHotel,
   updateHotel,
 } from "../controllers/hotelsController.js";
 import Hotel from "../models/Hotel.js";
@@ -23,10 +23,10 @@ router.put("/:id", updateHotel);
 router.delete("/:id", deleteHotel);
 
 //get
-router.get("/:id", singleHotel);
+router.get("/:id", getHotel);
 
 //getAll
 
-router.get("/", allHotels);
+router.get("/", getAllHotels);
 
 export default router;
