@@ -8,15 +8,16 @@ import {
 } from "../controllers/hotelsController.js";
 import Hotel from "../models/Hotel.js";
 import { createError } from "../utils/error.js";
+import { verifyAdmin } from "../utils/verifyToken.js";
 
 const router = express.Router();
 
 //create
-router.post("/", createHotel);
+router.post("/", verifyAdmin, createHotel);
 
 //update
 
-router.put("/:id", updateHotel);
+router.put("/:id", verifyAdmin, updateHotel);
 
 //delete
 

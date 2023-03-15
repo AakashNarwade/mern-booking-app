@@ -38,7 +38,7 @@ export const deleteHotel = async (req, res, next) => {
   try {
     const deletedHotel = await Hotel.findByIdAndDelete(id);
     res.status(200).json(deletedHotel);
-    res.status(200).json("hotel is deletd");
+    res.status(200).json("hotel is deleted");
   } catch (error) {
     next(error);
   }
