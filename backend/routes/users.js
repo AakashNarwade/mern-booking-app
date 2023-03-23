@@ -12,18 +12,18 @@ import { verifyAdmin, verifyToken, verifyUser } from "../utils/verifyToken.js";
 const router = express.Router();
 
 //check authenticated user
-// router.get("/checkauth", verifyToken, (req, res, next) => {
-//   res.send("user is logged in ");
-// });
+router.get("/checkauth", verifyToken, (req, res, next) => {
+  res.send("user is logged in ");
+});
 
-// router.get("/checkuser/:id", verifyUser, (req, res, next) => {
-//   res.send("hello authenticated user you can delete user account");
-// });
+router.get("/checkuser/:id", verifyUser, (req, res, next) => {
+  res.send("hello authenticated user you can delete user account");
+});
 
-// router.get("/checkadmin/:id", verifyAdmin, (req, res, next) => {
-//   console.log("hhhhhhhhhhhh");
-//   res.send("hello admin you can delete all users account");
-// });
+router.get("/checkadmin/:id", verifyAdmin, (req, res, next) => {
+  console.log("hhhhhhhhhhhh");
+  res.send("hello admin you can delete all users account");
+});
 
 //update
 
