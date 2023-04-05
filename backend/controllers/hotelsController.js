@@ -48,11 +48,17 @@ export const deleteHotel = async (req, res, next) => {
 
 export const getHotel = async (req, res, next) => {
   const { id } = req.params;
+  let hotel;
 
   try {
-    const hotel = await Hotel.findById(id);
+    // if (id.match(/^[0-9a-fA-F]{24}$/)) {
+    //   hotel = await Hotel.findById(id);
+    // }
+    hotel = await Hotel.findById(id);
+
     res.status(200).json(hotel);
   } catch (error) {
+    console.log(error);
     next(error);
   }
 };
