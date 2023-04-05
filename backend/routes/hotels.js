@@ -32,6 +32,7 @@ router.get("/find/:id", getHotel);
 router.get("/", getAllHotels);
 router.get("/countByCity", countByCity);
 router.get("/countByType", countByType);
+// router.get("/room/:id", getHotelRooms);
 
 
 export default router;
