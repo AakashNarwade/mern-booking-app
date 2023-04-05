@@ -27,13 +27,17 @@
     color: #522892;
 }
 
+.siDistance {
+    font-size: 12px;
+  }
+
 .siTaxiOp {
-    width: max-content;
-    font-size: 13px;
-    background-color: #008009;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
+    font-size: 12px;
+  background-color: #008009;
+  color: white;
+  width: max-content;
+  padding: 3px;
+  border-radius: 5px;
 }
 
 .siSubtitle{
@@ -94,6 +98,7 @@ border: none;
 
 .siPrice{
     font-size: 24px;
+    display: block;
   }
   
   .siTaxOp{
